@@ -19,19 +19,18 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
       }; // Creates new task object
       addTask(newTask); //call from props
       setTaskContent("");
-    } else {
-      alert("Task cannot be empty");
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="flex gap-2 mb-4">
       <TextField
-        id="outlined-basic"
-        value={taskContent}
         label="New Task"
         variant="outlined"
-        sx={{ flex: 1, marginBottom: 2 }}
+        fullWidth
+        value={taskContent}
+        onChange={(e) => setTaskContent(e.target.value)}
+        sx={{ marginBottom: 2 }}
       />
       <Button type="submit" variant="contained" sx={{ bgcolor: "green.300" }}>
         Add Task
