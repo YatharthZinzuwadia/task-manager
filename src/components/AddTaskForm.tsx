@@ -2,22 +2,17 @@ import { TextField, Button } from "@mui/material";
 import React, { useState } from "react";
 import { Task } from "../types";
 
-//had to use the help of internet and AI to realize why this interface was needed, and how it works.
-// interface Props {
-//   addTask: (task: Task) => void;
-// }
-//React.FC<Props> solution for resolving error of "any" was given by the internet.
-const AddTaskForm = () => {
+const AddTaskForm = ({ addTask }) => {
   const [taskContent, setTaskContent] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    // e.preventDefault();
-    // if (taskContent.trim()) {
-    //   addTask({ id: Date.now(), text: taskContent, completed: false });
-    //   setTaskContent("");
-    // } else {
-    //   alert("Task cannot be empty");
-    // }
+    e.preventDefault();
+    if (taskContent.trim()) {
+      addTask({ id: Date.now(), text: taskContent, completed: false });
+      setTaskContent("");
+    } else {
+      alert("Task cannot be empty");
+    }
   };
 
   return (
