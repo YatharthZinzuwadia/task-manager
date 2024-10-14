@@ -8,14 +8,27 @@ interface TaskItemProps {
   deleteTask: (id: number) => void; // Prop for deleting the task
 }
 
-const TaskItem = () => {
+const TaskItem: React.FC<TaskItemProps> = ({
+  task,
+  toggleComplete,
+  deleteTask,
+}) => {
   return (
-    <div>
+    <div className="flex justify-between items-center mb-2">
       <div>
-        <Checkbox />
-        <p>Task</p>
+        <Checkbox
+          checked={task.completed}
+          onChange={() => toggleComplete(task.id)}
+        />
+        <p>{task.text}</p>
       </div>
-      <Button>Delete</Button>
+      <Button
+        variant="contained"
+        color="error"
+        onClick={() => deleteTask(task.id)}
+      >
+        Delete
+      </Button>
     </div>
   );
 };
