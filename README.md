@@ -57,7 +57,8 @@ npm start
 # Open your browser and go to http://localhost:3000 to view the app.
 
 # Running Tests
-**Note** : testing libraries are not fully implemented.  
+**Note** : testing libraries are not implemented yet... 
+
 To run the unit tests, use:
 
 ```bash
