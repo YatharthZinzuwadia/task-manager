@@ -69,15 +69,15 @@ This command will start Jest and execute your test files, providing feedback on 
 
 Built by Yatharth Zinzuwadia using:
 
-**[React]**(https://react.dev/) - The web framework used
+**[React](https://react.dev/)** - The web framework used
 
-**[TypeScript]**(https://www.typescriptlang.org/) - For type safety
+**[TypeScript](https://www.typescriptlang.org/)** - For type safety
 
-**[Tailwind CSS]**(https://tailwindcss.com/) - For responsive design
+**[Tailwind CSS](https://tailwindcss.com/)** - For responsive design
 
-**[Jest]**(https://jestjs.io/) - For testing
+**[Jest](https://jestjs.io/)** - For testing
 
-**[React Testing Library]**(https://testing-library.com/docs/react-testing-library/intro/) - For component testing
+**[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)** - For component testing
 
 
 # Contributing
