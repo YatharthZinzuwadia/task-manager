@@ -73,7 +73,8 @@ Built by Yatharth Zinzuwadia using
 [Tailwind CSS](https://tailwindcss.com/) - For responsive design
 [Jest](https://jestjs.io/) - For testing
 [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - For component testing
-Contributing
+
+#Contributing
 Contributions are welcome! Please fork the repository and create a new branch for your feature or bug fix.
 
 Fork the repository.
