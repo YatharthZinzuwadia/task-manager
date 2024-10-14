@@ -38,14 +38,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="App p-4">
-      <h1>Task Manager</h1>
-      <AddTaskForm addTask={addTask} />
-      <TaskList
-        tasks={tasks}
-        toggleComplete={toggleComplete}
-        deleteTask={deleteTask}
-      />
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+      <h1 className="text-4xl font-bold text-blue-800 mb-8">Task Manager</h1>
+      <div className="w-full max-w-md bg-gray-200 shadow-xl rounded-xl p-4">
+        <AddTaskForm addTask={addTask} />
+        <TaskList
+          tasks={tasks}
+          toggleComplete={toggleComplete}
+          deleteTask={deleteTask}
+        />
+      </div>
     </div>
   );
 };
