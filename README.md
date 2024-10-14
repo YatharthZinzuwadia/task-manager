@@ -57,11 +57,13 @@ npm start
 # Open your browser and go to http://localhost:3000 to view the app.
 
 # Running Tests
+**Note** : testing libraries are not fully implemented.  
 To run the unit tests, use:
 
 ```bash
 npm test
 ```
+
 
 This command will start Jest and execute your test files, providing feedback on the functionality of your components.
 
