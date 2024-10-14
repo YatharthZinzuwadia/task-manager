@@ -1,14 +1,23 @@
-import { TextField, Button } from "@mui/material";
 import React, { useState } from "react";
-import { Task } from "../types";
+import { TextField, Button } from "@mui/material";
+import { Task } from "../types"; //import for type safety
 
-const AddTaskForm = ({ addTask }) => {
-  const [taskContent, setTaskContent] = useState("");
+interface AddTaskFormProps {
+  addTask: (task: Task) => void; // must follow the Task type
+}
+
+const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
+  const [taskContent, setTaskContent] = useState<string>(""); // store the new task text
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); //prevent refresh
     if (taskContent.trim()) {
-      addTask({ id: Date.now(), text: taskContent, completed: false });
+      const newTask: Task = {
+        id: Date.now(),
+        text: taskContent,
+        completed: false,
+      }; // Creates new task object
+      addTask(newTask); //call from props
       setTaskContent("");
     } else {
       alert("Task cannot be empty");
@@ -20,12 +29,12 @@ const AddTaskForm = ({ addTask }) => {
       <TextField
         id="outlined-basic"
         value={taskContent}
-        label="Add Task"
+        label="New Task"
         variant="outlined"
-        sx={{ flex: 1 }}
+        sx={{ flex: 1, marginBottom: 2 }}
       />
-      <Button type="submit" variant="contained" sx={{ bgcolor: "green.500" }}>
-        Add
+      <Button type="submit" variant="contained" sx={{ bgcolor: "green.300" }}>
+        Add Task
       </Button>
     </form>
   );

@@ -1,5 +1,5 @@
 export interface Task {
-  id: number;
-  text: string;
-  completed: boolean;
+  id: number; // uid for each task
+  text: string; // the task
+  completed: boolean; // mark complete or no
 }

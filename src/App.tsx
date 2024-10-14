@@ -14,3 +14,11 @@ function App() {
 }
 
 export default App;
+
+/*
+Task Guidelines : 
+a simple task management application
+features : Add task
+           Delete Task
+           Mark Update/Not update
+*/
