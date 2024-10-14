@@ -1,6 +1,4 @@
-# Getting Started with Task Manager
-
-# Task Management App
+# Getting Started: Task Management App
 
 ![Task Management App](![image](https://github.com/user-attachments/assets/019e38e5-51ac-485c-a9b1-3a256a43f071)
 )
