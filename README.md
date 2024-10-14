@@ -67,12 +67,18 @@ npm test
 
 This command will start Jest and execute your test files, providing feedback on the functionality of your components.
 
-Built by Yatharth Zinzuwadia using
-[React](https://react.dev/) - The web framework used
-[TypeScript](https://www.typescriptlang.org/) - For type safety
-[Tailwind CSS](https://tailwindcss.com/) - For responsive design
-[Jest](https://jestjs.io/) - For testing
-[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - For component testing
+Built by Yatharth Zinzuwadia using:
+
+**[React]**(https://react.dev/) - The web framework used
+
+**[TypeScript]**(https://www.typescriptlang.org/) - For type safety
+
+**[Tailwind CSS]**(https://tailwindcss.com/) - For responsive design
+
+**[Jest]**(https://jestjs.io/) - For testing
+
+**[React Testing Library]**(https://testing-library.com/docs/react-testing-library/intro/) - For component testing
+
 
 # Contributing
 Contributions are welcome! Please fork the repository and create a new branch for your feature or bug fix.
