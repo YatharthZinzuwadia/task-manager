@@ -48,16 +48,17 @@ Follow these steps to get a local copy of the project up and running:
 npm install
 ```
 
-Running the Application
+3. **Running the Application**
+
 To start the application, run:
 
 ```bash
 npm start
 ```
 
-Open your browser and go to http://localhost:3000 to view the app.
+# Open your browser and go to http://localhost:3000 to view the app.
 
-Running Tests
+# Running Tests
 To run the unit tests, use:
 
 ```bash
