@@ -23,8 +23,9 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 mb-4">
+    <form onSubmit={handleSubmit} className="flex gap-2 mb-4 flex-col">
       <TextField
+        className="flex-grow border border-gray-300 rounded-l-lg p-2 focus:outline-none focus:ring focus:border-blue-500"
         label="New Task"
         variant="outlined"
         fullWidth
@@ -32,7 +33,12 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
         onChange={(e) => setTaskContent(e.target.value)}
         sx={{ marginBottom: 2 }}
       />
-      <Button type="submit" variant="contained" sx={{ bgcolor: "green.300" }}>
+      <Button
+        className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition"
+        type="submit"
+        variant="contained"
+        sx={{ bgcolor: "green.300" }}
+      >
         Add Task
       </Button>
     </form>
