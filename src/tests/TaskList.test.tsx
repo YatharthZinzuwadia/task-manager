@@ -22,8 +22,8 @@ describe("TaskList", () => {
       />
     ); //render component with mock fn
 
-    // const TaskListElement = screen.getByText("Task 1"); //query for task element
-    const TaskListElement = screen.getByText(new RegExp(tasks.text, "i"));
+    const TaskListElement = screen.getByText("Task 1"); //query for task element
+    // const TaskListElement = screen.getByText(new RegExp(tasks.text, "i"));
     expect(TaskListElement).toBeInTheDocument();
   });
   test("renders message when no tasks are available", () => {
