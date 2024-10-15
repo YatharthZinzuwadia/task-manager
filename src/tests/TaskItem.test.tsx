@@ -21,7 +21,7 @@ describe("TaskItem", () => {
     expect(TaskElement).toBeInTheDocument(); //the check
   });
 
-  // TestCase : check if toggleComplete is called
+  // Test : check if toggleComplete is called
   test("calls toggleComplete when checkbox is clicked", () => {
     const toggleCommpleteMock = jest.fn(); //mock fn to track call
     render(
@@ -31,6 +31,23 @@ describe("TaskItem", () => {
         deleteTask={jest.fn()}
       />
     );
-    
+    const checkboxClick = screen.getByRole("checkbox");
+    fireEvent.click(checkboxClick);
+    expect(toggleCommpleteMock).toHaveBeenCalledWith(task.id);
+  });
+
+  // Test : check if deleteTask is called
+  test("calls deleteTask when delete button is clicked", () => {
+    const deleteTaskMock = jest.fn(); //mock fn to track call
+    render(
+      <TaskItem
+        task={task}
+        toggleComplete={jest.fn()}
+        deleteTask={deleteTaskMock} //render with mock fn
+      />
+    );
+    const deleteButton = screen.getByRole("button");
+    fireEvent.click(deleteButton);
+    expect(deleteTaskMock).toHaveBeenCalledWith(task.id);
   });
 });
