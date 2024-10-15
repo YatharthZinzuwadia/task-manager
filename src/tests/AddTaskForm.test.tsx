@@ -6,6 +6,7 @@ describe("AddTaskForm", () => {
   // it("should add a new task", () => {
   //     const addTask = jest.fn();
   // })
+  //Test Case : check if form is rendered correctly
   test("render form correctly", () => {
     //render component and store in vDOM
     render(<AddTaskForm addTask={jest.fn()} />); //passing mock props
@@ -16,7 +17,7 @@ describe("AddTaskForm", () => {
     expect(buttonElement).toBeInTheDocument();
   });
 
-  //Test case 1: check if addTask is called onSubmit
+  //Test case: check if addTask is called onSubmit
   test("check if addTask is called onSubmit", () => {
     const addTaskMock = jest.fn(); //mock fn to track call
     render(<AddTaskForm addTask={addTaskMock} />); //render component with mock fn
