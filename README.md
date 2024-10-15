@@ -1,43 +1,108 @@
-# Getting Started with Create React App
+# Getting Started: Task Management App
+
+![Task Management App](![image](https://github.com/user-attachments/assets/019e38e5-51ac-485c-a9b1-3a256a43f071)
+)
+
+A simple task management application built with **React** and **TypeScript**. This app allows users to manage their tasks efficiently, offering features to add, delete, and mark tasks as completed.
+
+## Features
+
+- **Add Tasks**: Quickly create new tasks.
+- **Delete Tasks**: Remove tasks when they are no longer needed.
+- **Mark as Completed**: Toggle the completion status of tasks.
+- **Responsive Design**: Mobile-friendly layout using **Tailwind CSS**.
+- **Unit Testing**: Ensure functionality with tests using **Jest** and **React Testing Library**.
+- **Local Storage**: Persist tasks across sessions with localStorage.
+
+## Screenshots
+
+### Task List
+![Task List](![image](https://github.com/user-attachments/assets/f5bfb4cf-ad91-433b-80b9-80bbf2a52195)
+) 
+
+### Add Task Form
+![Add Task Form](![image](https://github.com/user-attachments/assets/9a5edfdd-f0ef-45fa-b56d-292df4e8a1ac)
+) 
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (includes npm)
+
+### Installation
+
+Follow these steps to get a local copy of the project up and running:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/task-manager.git
+   cd task-manager
+
+2. **Install dependencies**:
+```bash
+npm install
+```
+
+3. **Running the Application**
+
+To start the application, run:
+
+```bash
+npm start
+```
+
+# Open your browser and go to http://localhost:3000 to view the app.
+
+# Running Tests
+**Note** : testing libraries are not implemented yet... 
+
+To run the unit tests, use:
+
+```bash
+npm test
+```
+
+
+This command will start Jest and execute your test files, providing feedback on the functionality of your components.
+
+Built by Yatharth Zinzuwadia using:
+
+**[React](https://react.dev/)** - The web framework used
+
+**[TypeScript](https://www.typescriptlang.org/)** - For type safety
+
+**[Tailwind CSS](https://tailwindcss.com/)** - For responsive design
+
+**[Jest](https://jestjs.io/)** - For testing
+
+**[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)** - For component testing
+
+
+# Contributing
+Contributions are welcome! Please fork the repository and create a new branch for your feature or bug fix.
+
+Fork the repository.
+Create a new branch:
+```bash
+git checkout -b feature/YourFeature
+```
+
+Make your changes.
+Commit your changes:
+```bash
+git commit -m "Add some feature"
+```
+Push to the branch:
+```bash
+git push origin feature/YourFeature
+```
+License
+This project is licensed under the MIT License.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
