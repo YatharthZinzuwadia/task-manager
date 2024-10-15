@@ -15,7 +15,8 @@ const TaskList: React.FC<TaskListProps> = ({
 }) => {
   return (
     <div>
-      <ul className="space-y-4">
+      {/* different styling */}
+      {/* <ul className="space-y-4">
         {tasks.map((task) => (
           <li
             key={task.id}
@@ -37,15 +38,15 @@ const TaskList: React.FC<TaskListProps> = ({
             </button>
           </li>
         ))}
-      </ul>
-      {/* {tasks.map((task) => (
+      </ul> */}
+      {tasks.map((task) => (
         <TaskItem
           key={task.id}
           task={task}
           toggleComplete={toggleComplete}
           deleteTask={deleteTask}
         />
-      ))} */}
+      ))}
     </div>
   );
 };
