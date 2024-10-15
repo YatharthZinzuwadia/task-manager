@@ -9,7 +9,7 @@ interface AddTaskFormProps {
 const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
   const [taskContent, setTaskContent] = useState<string>(""); // store the new task text
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const onSubmitEventHandler = (e: React.FormEvent) => {
     e.preventDefault(); //prevent refresh
     if (taskContent.trim()) {
       const newTask: Task = {
@@ -17,14 +17,14 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
         id: Date.now(),
         text: taskContent,
         completed: false,
-      }; 
+      };
       addTask(newTask); //call from props
       setTaskContent("");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 mb-4 flex-col">
+    <form onSubmit={onSubmitEventHandler} className="flex gap-2 mb-4 flex-col">
       <TextField
         className="flex-grow border border-gray-300 rounded-l-lg p-2 focus:outline-none focus:ring focus:border-blue-500"
         label="New Task"
