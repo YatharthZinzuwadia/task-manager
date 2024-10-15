@@ -14,8 +14,8 @@ const TaskItem: React.FC<TaskItemProps> = ({
   deleteTask,
 }) => {
   return (
-    <div className="flex justify-between items-center mb-2">
-      <div>
+    <div className="flex justify-between items-center mb-2 ">
+      <div className="flex items-center justify-between p-2 bg-gray-50 rounded-md shadow">
         <Checkbox
           checked={task.completed}
           onChange={() => toggleComplete(task.id)}
@@ -23,6 +23,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
         <p>{task.text}</p>
       </div>
       <Button
+        className="ml-4 text-red-500 hover:text-red-200 transition"
         variant="contained"
         color="error"
         onClick={() => deleteTask(task.id)}
