@@ -13,10 +13,11 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
     e.preventDefault(); //prevent refresh
     if (taskContent.trim()) {
       const newTask: Task = {
+        // Creates new task object
         id: Date.now(),
         text: taskContent,
         completed: false,
-      }; // Creates new task object
+      }; 
       addTask(newTask); //call from props
       setTaskContent("");
     }

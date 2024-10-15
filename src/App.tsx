@@ -12,12 +12,11 @@ const App: React.FC = () => {
     if (storedTasks) {
       setTasks(JSON.parse(storedTasks));
     }
-  }, []); // Dependency array is empty, meaning this runs only once when the component mounts
+  }, []); //this runs only once when the component mounts
 
   // Store tasks in localStorage whenever `tasks` changes
   useEffect(() => {
     if (tasks.length) {
-      // Ensure this only runs if tasks have some length to avoid empty array warning
       localStorage.setItem("tasks", JSON.stringify(tasks));
     }
   }, [tasks]); // Add `tasks` to the dependency array, so it updates localStorage whenever tasks change
@@ -55,13 +54,3 @@ const App: React.FC = () => {
 
 export default App;
 
-/*
-Task Guidelines : 
-a simple task management application
-features : Add task
-           Delete Task
-           Mark Update/Not update
-references : https://stackoverflow.com/questions/59988667/typescript-react-fcprops-confusion
-https://stackoverflow.com/questions/70744017/passing-interface-props-in-functional-component-in-typescript
-
-*/
