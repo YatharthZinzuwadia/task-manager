@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.fe26e62b.css",
-    "main.js": "/react-gh-pages/static/js/main.ca2e45f1.js",
-    "static/js/453.a53b11f0.chunk.js": "/react-gh-pages/static/js/453.a53b11f0.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.fe26e62b.css.map": "/react-gh-pages/static/css/main.fe26e62b.css.map",
-    "main.ca2e45f1.js.map": "/react-gh-pages/static/js/main.ca2e45f1.js.map",
-    "453.a53b11f0.chunk.js.map": "/react-gh-pages/static/js/453.a53b11f0.chunk.js.map"
+    "main.css": "/task-manager/static/css/main.fe26e62b.css",
+    "main.js": "/task-manager/static/js/main.0eaa2ce8.js",
+    "static/js/453.a53b11f0.chunk.js": "/task-manager/static/js/453.a53b11f0.chunk.js",
+    "index.html": "/task-manager/index.html",
+    "main.fe26e62b.css.map": "/task-manager/static/css/main.fe26e62b.css.map",
+    "main.0eaa2ce8.js.map": "/task-manager/static/js/main.0eaa2ce8.js.map",
+    "453.a53b11f0.chunk.js.map": "/task-manager/static/js/453.a53b11f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe26e62b.css",
-    "static/js/main.ca2e45f1.js"
+    "static/js/main.0eaa2ce8.js"
   ]
 }
